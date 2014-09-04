@@ -12,16 +12,17 @@
     <!--BEGIN .hentry-->
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php stag_page_start(); ?>
-    <div class="push-in">
         <h1 class="entry-title "><span><?php the_title(); ?></span></h1>
-    </div>
     <!-- BEGIN .entry-content -->
-    <div class="entry-content">
+    <div class="entry-content grid_9">
         <?php
             the_content( __('Continue Reading', 'stag') );
             wp_link_pages(array('before' => '<p><strong>'.__('Pages:', 'stag').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number'));
         ?>
     <!-- END .entry-content -->
+    </div>
+    <div class="sidebar grid_3 omega">
+    	<?php get_sidebar(); ?>
     </div>
 
     <?php stag_page_end(); ?>
@@ -37,5 +38,4 @@
 <!--END #primary .hfeed-->
 </div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

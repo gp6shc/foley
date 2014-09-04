@@ -25,22 +25,22 @@
 	
 	<div class="grids">
 	  <div class="grid-4 center">
-	  	<a href="<?php echo home_url(); ?>/about-foley"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature1.png" /></a>
+	  	<a href="<?php echo home_url(); ?>/about"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature1.png" /></a>
 	  	<h3 class="title"><span>About Us</span></h3>
 	  	<p class="home">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-	  	<a href="<?php echo home_url(); ?>/about-foley"><button class="more" title="Read More">Read More</button></a>
+	  	<a href="<?php echo home_url(); ?>/about"><button class="more" title="Read More">Read More</button></a>
 	  </div>
 	  <div class="grid-4 center">
-	  	<a href="<?php echo home_url(); ?>/our-land"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature2.png" /></a>
+	  	<a href="<?php echo home_url(); ?>/land"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature2.png" /></a>
 	  	<h3 class="title"><span>Our Land</span></h3>
 	  	<p class="home">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-	  	<a href="<?php echo home_url(); ?>/our-land"><button class="more" title="Read More">Read More</button></a>
+	  	<a href="<?php echo home_url(); ?>/land"><button class="more" title="Read More">Read More</button></a>
 	  </div>
 	  <div class="grid-4 center">
-	  	<a href="<?php echo home_url(); ?>/the-community"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature3.png" /></a>
+	  	<a href="<?php echo home_url(); ?>/community"><img class="thumb" src="<?php bloginfo('stylesheet_directory') ?>/assets/img/home_feature3.png" /></a>
 	  	<h3 class="title"><span>The Community</span></h3>
 	  	<p class="home">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
-	  	<a href="<?php echo home_url(); ?>/the-community"><button class="more" title="Read More">Read More</button></a>
+	  	<a href="<?php echo home_url(); ?>/community"><button class="more" title="Read More">Read More</button></a>
 	  </div>
 	</div><!-- /.grids -->
 	<!-- END Homepage Featured Section -->

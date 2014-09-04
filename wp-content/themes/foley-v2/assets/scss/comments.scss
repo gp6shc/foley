@@ -1,0 +1,166 @@
+/*-----------------------------------------------------------------------------------*/
+/*  $Comment Styles
+/*-----------------------------------------------------------------------------------*/
+#respond-wrap, #comment-wrap {
+  margin: 30px 0;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding-top: 45px;
+}
+#respond-wrap:before, #comment-wrap:before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 6px;
+  background: #ebebeb;
+  left: 0;
+  top: 0px;
+}
+
+#reply-title {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 45px;
+}
+
+.comments-header {
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#comments {
+  float: left;
+}
+
+.avatar-wrap {
+  float: left;
+}
+
+.comment-area {
+  padding-left: 90px;
+}
+
+.comment-reply-link {
+  float: right;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.portfolio-items .section-title, .latest-posts .section-title, .comment-author, .comment-date {
+  display: inline-block;
+}
+
+.comment-author {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.comment-text {
+  margin-top: 20px;
+}
+
+#respond label, #respond .comment-form-comment span {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.commentlist #respond {
+  margin-top: 40px;
+}
+#respond .section-description, #respond .comment-form-email span {
+  font-size: 16px;
+  color: #949494;
+  float: right;
+  margin-top: 10px;
+}
+@media screen and (max-width: 899px) {
+  #respond .section-description, #respond .comment-form-email span {
+    display: block;
+    float: none;
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+
+.respond-button, .project-button, #submit, input[type=submit].contact-form-button {
+  display: inline-block;
+  float: right;
+  width: 230px;
+  font-size: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.project-button {
+  float: none;
+  width: auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+#load-more {
+  float: none;
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+#submit {
+  float: none;
+}
+
+#commentform {
+  margin-top: 20px;
+}
+#commentform p {
+  margin-top: 30px;
+}
+
+.comment-form-email span {
+  margin-top: 0!important;
+}
+@media screen and (max-width: 899px) {
+  .comment-form-email span {
+    display: none!important;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .comment-form-author {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .comment-form-author,
+  .comment-form-email {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+  }
+}
+.comment-form-author input,
+.comment-form-email input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.avatar {
+  width: 70px;
+}
+
+.commentlist {
+  margin: 0;
+  padding: 0;
+}
+.commentlist > li:last-child {
+  border-bottom: none;
+}
+.commentlist li {
+  list-style: none;
+  padding: 50px 0;
+  border-bottom: 1px solid #ebebeb;
+}

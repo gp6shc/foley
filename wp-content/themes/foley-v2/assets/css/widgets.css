@@ -1,0 +1,140 @@
+/*-----------------------------------------------------------------------------------*/
+/*  $Widget Styles
+/*-----------------------------------------------------------------------------------*/
+.widget_recent_entries li {
+  position: relative;
+  padding-top: 20px;
+  list-style: none; }
+
+.widget_recent_entries a {
+  font-size: 22px;
+  font-weight: 100;
+  display: inline-block; }
+
+.widget_recent_entries .post-date {
+  color: #bbb;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.footer .widget_recent_entries a {
+  color: #fff; }
+
+.flickr_badge_image {
+  display: inline-block;
+  margin: 0 0 3% 3%;
+  vertical-align: top;
+  width: 30%;
+  max-width: 75px;
+  margin-right: -.25em;
+  margin-top: -.25em; }
+
+.flickr_badge_image img {
+  width: 100%; }
+
+.twitter-feeds li {
+  margin-bottom: 25px;
+  color: #A2A1A1; }
+
+.twitter-feeds li a {
+  color: #5c5c5c; }
+
+.twitter-feeds .time {
+  font-style: italic;
+  font-size: small;
+  margin-top: 3px; }
+
+.social-icons {
+  margin: 30px 0; }
+
+.social-icons .icon {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 30px;
+  width: 69px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  height: 69px;
+  padding-top: 22px;
+  text-align: center;
+  background: #cccccc;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.social-icons .icon-myspace {
+  font-size: 10px;
+  padding-top: 32px; }
+
+.social-icons .icon-soundcloud {
+  font-size: 22px; }
+
+.social-icons .icon-flickr {
+  font-size: 18px;
+  padding-top: 28px; }
+
+.social-icons a {
+  border: none !important;
+  color: #fff; }
+
+.social-icons a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65; }
+
+.google-map {
+  margin-bottom: 30px; }
+
+.page-template-template-contact-php .section-description {
+  font-size: 16px;
+  color: #949494;
+  float: right;
+  margin-top: 10px;
+  vertical-align: top; }
+
+@media screen and (max-width: 899px) {
+  .page-template-template-contact-php .section-description {
+    display: block;
+    float: none;
+    text-align: left;
+    margin-top: 15px; } }
+.page-template-template-contact-php #reply-title {
+  margin-bottom: 50px;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+  padding-top: 45px;
+  margin-left: -30px;
+  padding-left: 30px; }
+
+.page-template-template-contact-php #reply-title:before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 6px;
+  background: #ebebeb;
+  left: 0;
+  top: 0px; }
+
+.contact-form input[type="text"] {
+  width: 100%; }
+
+.contact-form label {
+  font-weight: 100;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px; }
+
+.contact-form p {
+  margin: 30px 0; }
+
+.contact-form span {
+  font-size: 13px;
+  float: right;
+  color: #cacaca; }
+
+input[type=submit].contact-form-button {
+  float: none;
+  font-weight: normal;
+  font-size: 17px;
+  width: 240px; }

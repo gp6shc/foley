@@ -4,13 +4,9 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html <?php language_attributes(); ?> class="no-js"> <!--<![endif]-->
 <head>
   <title><?php wp_title('|', true, 'right'); ?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="yes">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <?php stag_meta_head(); ?>
-  <!-- Prefetch DNS for external resources to speed up loading time -->
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="//api.twitter.com">
   <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>

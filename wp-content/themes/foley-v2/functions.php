@@ -48,34 +48,34 @@ if(!function_exists('stag_sidebar_init')){
   function stag_sidebar_init(){
 
     register_sidebar(array(
-      'name' => __('Blog Sidebar', 'stag'),
+      'name' => __('Main Sidebar', 'stag'),
       'id' => 'sidebar-main',
       'before_widget' => '<aside id="%1$s" class="widget %2$s">',
       'after_widget'  => '</aside>',
       'before_title'  => '<h3 class="widget-title">',
       'after_title'   => '</h3>',
-      'description'   => __('Blog Widgets Area.', 'stag')
+      'description'   => __('Main Sidebar. Must check what page to show this for.', 'stag')
     ));
 
-    register_sidebar(array(
-      'name' => __('Homepage Sidebar 1', 'stag'),
-      'id' => 'sidebar-homepage-1',
-      'before_widget' => '<section id="%1$s" class="section-block %2$s">',
-      'after_widget'  => '</section>',
-      'before_title'  => '<h3 class="section-title">',
-      'after_title'   => '</h3>',
-      'description'   => __('Widgets Area for template Homepage 1.', 'stag')
-    ));
+   // register_sidebar(array(
+     // 'name' => __('Homepage Sidebar 1', 'stag'),
+    //  'id' => 'sidebar-homepage-1',
+    //  'before_widget' => '<section id="%1$s" class="section-block %2$s">',
+    //  'after_widget'  => '</section>',
+    //  'before_title'  => '<h3 class="section-title">',
+    //  'after_title'   => '</h3>',
+   //   'description'   => __('Widgets Area for template Homepage 1.', 'stag')
+   // ));
 
-    register_sidebar(array(
-      'name' => __('Services Sidebar', 'stag'),
-      'id' => 'sidebar-services',
-      'before_widget' => '<div id="%1$s" class="grid-4 %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h4 class="service__title">',
-      'after_title'   => '</h4>',
-      'description'   => __('Services Widgets area, use only "Service Box" widget here.', 'stag')
-    ));
+   // register_sidebar(array(
+   //   'name' => __('Services Sidebar', 'stag'),
+   //   'id' => 'sidebar-services',
+    //  'before_widget' => '<div id="%1$s" class="grid-4 %2$s">',
+    //  'after_widget'  => '</div>',
+    //  'before_title'  => '<h4 class="service__title">',
+    //  'after_title'   => '</h4>',
+   //   'description'   => __('Services Widgets area, use only "Service Box" widget here.', 'stag')
+   // ));
 
     register_sidebar(array(
       'name' => __('Footer Widgets', 'stag'),
@@ -120,7 +120,7 @@ function stag_enqueue_scripts(){
 
     /* Enqueue Styles ---------------------------------------------------*/
     //wp_enqueue_style( 'flexslider', get_template_directory_uri().'/assets/css/flexslider.css' );
-    wp_enqueue_style( 'stag-style', get_stylesheet_uri() );
+    //wp_enqueue_style( 'stag-style', get_stylesheet_uri() );
     /* Load Sass (theme.css auto compiled from assets/sass/theme.scss */
     wp_enqueue_style( 'sass', get_template_directory_uri().'/assets/css/theme.css' );
     //wp_enqueue_style( 'stag-font', get_template_directory_uri().'/assets/fonts/fonts.css' );

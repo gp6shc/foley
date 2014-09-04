@@ -1,0 +1,74 @@
+/*-----------------------------------------------------------------------------------*/
+/*  $Footer Styles
+/*-----------------------------------------------------------------------------------*/
+.footer {
+  background: #2b373c;
+  color: #fff;
+  padding: 45px 30px;
+  list-style: none;
+}
+.footer li {
+  list-style: none;
+}
+.footer .twitter-feeds li {
+  color: white;
+  margin-bottom: 25px;
+}
+.footer .time a {
+  color: white;
+}
+.footer .widget {
+  line-height: 1.4;
+}
+.footer .widget p {
+  margin-bottom: 20px;
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer li {
+  margin-bottom: 15px;
+}
+
+footer.copyright {
+  background: #283135;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer.copyright a:hover {
+  color: #fff;
+}
+footer.copyright .grid-4 {
+  padding: 25px 0px 25px 30px;
+}
+footer.copyright .grid-8, footer.copyright .grid-4 {
+  margin-bottom: 0;
+}
+footer.copyright .social-icons {
+  margin: 0;
+}
+@media screen and (min-width: 700px) {
+  footer.copyright .social-icons {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 699px) {
+  footer.copyright .social-icons {
+    padding: 0 30px;
+  }
+}
+
+.portfolio-loading {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+}
+.ie8 .portfolio-loading, .ie9 .portfolio-loading {
+  display: block;
+}
