@@ -1,0 +1,233 @@
+/* 
+-------------------------------------------------------------- 
+Stylesheet Name: Theme.scss
+Theme URI: #
+Author: SMG / B
+Description: Using Sass to auto compile custom overrides of theme styles to "../assets/css/theme.css"
+-------------------------------------------------------------- */
+/* Imports
+-------------------------------------------------------------- */
+@import url("../fonts/fonts.css");
+@import url("../css/shortcodes.css");
+/* Sass Variables
+-------------------------------------------------------------- */
+/* Color Variables
+-------------------------------------------------------------- */
+/* Mixins
+-------------------------------------------------------------- */
+/* Buttons, Tabs, & Images... Oh My!
+-------------------------------------------------------------- */
+button {
+  font-weight: normal;
+  font-size: 18px;
+  background-color: #614925;
+  border-bottom: 3px solid #3c2d17; }
+  button:hover {
+    background-color: #3c2d17;
+    border-bottom: 3px solid #171109; }
+
+img.thumb {
+  padding: 7px;
+  margin-bottom: 10px;
+  background: #f9f9f9; }
+  img.thumb:hover {
+    background-color: #ececec;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+/* Header
+-------------------------------------------------------------- */
+.header #logo {
+  margin-top: 25px;
+  width: 210px;
+  height: auto; }
+
+/*.backstretch{
+	position: fixed!important;
+}*/
+#primary-menu > li {
+  margin-left: 8px; }
+
+#primary-menu > li > a {
+  margin-top: 40px;
+  padding: 4px; }
+  #primary-menu > li > a:hover {
+    border-color: transparent; }
+
+#primary-menu .current-menu-item a {
+  border-color: transparent;
+  border: none; }
+
+#primary-menu .sfHover a {
+  color: #f9f9f9;
+  background: #614925;
+  border: none;
+  border-color: transparent;
+  opacity: 0.9; }
+
+#primary-menu ul.sub-menu {
+  background: #614925;
+  color: #f9f9f9;
+  border: none; }
+  #primary-menu ul.sub-menu:before {
+    border-bottom: 10px solid #614925; }
+
+#primary-menu ul.sub-menu a {
+  color: #f9f9f9; }
+  #primary-menu ul.sub-menu a:hover {
+    color: #acacac; }
+
+/* Homepage
+-------------------------------------------------------------- */
+.site-width, .header .header-inner, #primary-menu, .container, .footer, .footer .inside, footer.copyright {
+  max-width: 100%; }
+
+.container {
+  background: #fffdfc;
+  padding: 30px;
+  -moz-box-shadow: 0px 0px 15px #222222;
+  -webkit-box-shadow: 0px 0px 15px #222222;
+  box-shadow: 0px 0px 15px #222222;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color'); }
+
+.hfeed .hentry {
+  margin-bottom: 40px; }
+
+.custom-background.universal .backstretch {
+  opacity: 1 !important; }
+
+.title, .entry-title {
+  color: #614925;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 34px;
+  padding: 10px 0px; }
+  .title:after, .entry-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 2px solid #f3f3f3;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    top: 25px;
+    left: 0; }
+
+.title span, .entry-title span {
+  padding: 0 10px;
+  font-weight: 100;
+  background: #fffdfc; }
+
+.italic {
+  font-style: italic;
+  padding: 20px 0px 45px 0px; }
+
+.italic.less-pad {
+  padding-bottom: 0px; }
+
+.about {
+  background: url("../img/wood.png") 0px 0px repeat-x;
+  padding: 20px 0px;
+  min-height: 55px;
+  color: #f9f9f9; }
+
+p.home {
+  padding-bottom: 30px; }
+
+/* About
+-------------------------------------------------------------- */
+/* Our Land
+-------------------------------------------------------------- */
+/* The Community
+-------------------------------------------------------------- */
+/* Contact
+-------------------------------------------------------------- */
+/* Gallery
+-------------------------------------------------------------- */
+.overlay h3.entry-title a {
+  background: none; }
+
+.portfolio-items {
+  padding-top: 50px; }
+
+/* Footer 
+-------------------------------------------------------------- */
+footer.copyright {
+  background: #3c2d17;
+  -moz-box-shadow: 0px 0px 15px #222222;
+  -webkit-box-shadow: 0px 0px 15px #222222;
+  box-shadow: 0px 0px 15px #222222;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color'); }
+
+footer.copyright .social-icons {
+  margin-right: 20px; }
+
+.social-icons .icon {
+  color: #614925;
+  background: #fff;
+  font-size: 11px;
+  width: 25px;
+  height: 25px;
+  margin-top: 25px;
+  margin-right: 5px;
+  padding-top: 9px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%; }
+
+/* Media Queries
+-------------------------------------------------------------- */
+@media screen and (min-width: 700px) {
+  #primary.full {
+    max-width: 85% !important;
+    position: relative;
+    margin: 0 auto; }
+
+  #primary.hfeed {
+    position: relative;
+    margin: 0 auto;
+    max-width: 85%; }
+
+  .home .container {
+    margin-top: 0px; }
+
+  .home .custom-background {
+    min-height: 500px; }
+
+  .push-in {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 75%; }
+
+  .push-in-two {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    max-width: 85%; } }
+@media screen and (max-width: 700px) {
+  .social-icons .icon {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 480px) {
+  #mobile-nav {
+    top: -45px; }
+
+  .header #logo {
+    width: 200px; }
+
+  .backstretch {
+    height: 0px !important; }
+
+  .backstretch img {
+    display: none; }
+
+  .custom-background {
+    height: 125px; }
+    .custom-background .custom-background.universal {
+      min-height: 125px; } }

@@ -1,0 +1,275 @@
+/* 
+-------------------------------------------------------------- 
+Stylesheet Name: Theme.scss
+Theme URI: #
+Author: SMG / B
+Description: Using Sass to auto compile custom overrides of theme styles to "../assets/css/theme.css"
+-------------------------------------------------------------- */
+
+/* Imports
+-------------------------------------------------------------- */
+@import url('../fonts/fonts.css');
+@import url('../css/shortcodes.css');
+
+/* Sass Variables
+-------------------------------------------------------------- */
+/* Color Variables
+-------------------------------------------------------------- */
+$foley_container: #FFFDFC;
+$foley_brown: #614925;
+$foley_white: #f9f9f9;
+$foley_grey: #f3f3f3;
+$foley_blue: #38353C;
+
+/* Mixins
+-------------------------------------------------------------- */
+@mixin shadow($color: #222222) {
+  -moz-box-shadow: 0px 0px 15px $color;
+  -webkit-box-shadow: 0px 0px 15px $color;
+  box-shadow: 0px 0px 15px $color;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
+}
+
+/* Buttons, Tabs, & Images... Oh My!
+-------------------------------------------------------------- */
+button{
+	font-weight: normal;
+	font-size: 18px;
+	background-color: $foley_brown;
+	border-bottom: 3px solid darken( $foley_brown, 10% ); 
+	&:hover{
+		background-color: darken( $foley_brown, 10% );
+		border-bottom: 3px solid darken( $foley_brown, 20% );
+	}
+}
+img.thumb{
+	padding: 7px;
+	margin-bottom: 10px;
+	background: $foley_white;
+	&:hover{
+		background-color: darken( $foley_white, 5% );
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+	}
+}
+
+
+
+/* Header
+-------------------------------------------------------------- */
+.header #logo{
+	margin-top: 25px;
+	width: 210px;
+	height: auto;
+}
+/*.backstretch{
+	position: fixed!important;
+}*/
+#primary-menu > li{
+	margin-left: 8px;
+}
+#primary-menu > li > a{
+	margin-top: 40px;
+	padding: 4px;
+		&:hover{
+			border-color: transparent;
+		}
+}
+#primary-menu .current-menu-item a {
+	border-color: transparent;
+	border: none;
+}
+#primary-menu .sfHover a{
+	color: $foley_white;
+	background: $foley_brown;
+	border: none;
+	border-color: transparent;
+	opacity: 0.9;
+}
+#primary-menu ul.sub-menu{
+	background: $foley_brown;
+	color: $foley_white;
+	border: none;
+		&:before{
+			border-bottom: 10px solid $foley_brown;
+		}
+}
+#primary-menu ul.sub-menu a{
+	color: $foley_white;
+		&:hover{
+			color: darken( $foley_white, 30% );
+		}
+}
+
+
+
+/* Homepage
+-------------------------------------------------------------- */
+.site-width, .header .header-inner, #primary-menu, .container, .footer, .footer .inside, footer.copyright{
+	max-width: 100%; // removes static px width, to allow 100% width for desktop screens
+}
+.container{
+	background: $foley_container;
+	padding: 30px;
+	@include shadow(#222222);
+}
+.hfeed .hentry{
+	margin-bottom: 40px;
+}
+.custom-background.universal .backstretch {
+	opacity: 1!important;
+}
+.title, .entry-title{
+	color: $foley_brown;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 34px;
+	padding: 10px 0px;
+	&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		border-top: 2px solid $foley_grey;
+		width: 100%;
+		height: 0;
+		z-index: -1;
+		top: 25px;
+		left: 0;
+	}
+}
+.title span, .entry-title span{
+	padding: 0 10px;
+	font-weight: 100;
+	background: $foley_container;
+}
+.italic{
+	font-style: italic;
+	padding: 20px 0px 45px 0px;
+}
+.italic.less-pad{
+	padding-bottom: 0px;
+}
+.about{
+	background: url('../img/wood.png') 0px 0px repeat-x;
+	padding: 20px 0px;
+	min-height: 55px;
+	color: $foley_white;
+}
+p.home{
+	padding-bottom: 30px;
+}
+
+/* About
+-------------------------------------------------------------- */
+
+/* Our Land
+-------------------------------------------------------------- */
+
+/* The Community
+-------------------------------------------------------------- */
+
+/* Contact
+-------------------------------------------------------------- */
+
+/* Gallery
+-------------------------------------------------------------- */
+.overlay h3.entry-title a{
+	background: none;
+}
+.portfolio-items{
+	padding-top: 50px;
+}
+
+
+/* Footer 
+-------------------------------------------------------------- */
+footer.copyright{
+	background: darken( $foley_brown, 10%);
+	@include shadow(#222222);
+}
+footer.copyright .social-icons{
+	margin-right: 20px;
+}
+.social-icons .icon{
+	color: $foley_brown;
+	background: #fff;
+	font-size: 11px;
+	width: 25px;
+	height: 25px;
+	margin-top: 25px;
+	margin-right: 5px;
+	padding-top: 9px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+}
+
+
+
+/* Media Queries
+-------------------------------------------------------------- */
+
+@media screen and (min-width: 700px){ //above 700px
+	#primary.full{
+		max-width: 85%!important;
+		position: relative;
+		margin: 0 auto;
+	}
+	#primary.hfeed{
+		position: relative;
+		margin: 0 auto;
+		max-width: 85%;
+	}
+	.home .container{
+		margin-top: 0px; // removes container overlap over header
+	}
+	.home .custom-background{
+		min-height: 500px;
+	}
+	.push-in{
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		max-width: 75%;
+	}
+	.push-in-two{
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		max-width: 85%;
+	}
+}
+
+
+@media screen and (max-width: 700px){ //below 700px
+	.social-icons .icon{
+		margin-bottom: 30px;
+	}
+}
+
+
+
+@media screen and (max-width: 480px){  //below 480px
+	#mobile-nav{
+		top: -45px;
+	}
+	.header #logo{
+		width: 200px;
+	}
+	.backstretch{
+		height: 0px!important;
+	}
+	.backstretch img{
+		display: none;
+	}
+	.custom-background{
+		height: 125px;
+	.custom-background.universal{
+		min-height: 125px;}
+	}
+}

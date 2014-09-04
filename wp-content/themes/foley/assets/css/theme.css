@@ -1,0 +1,153 @@
+/* Name: Foley Timber & Land Co, theme specific styles & overrides
+*/
+
+body{
+	background-color: #F5EFE7;
+	overflow-x: hidden;
+}
+a{
+	
+}
+a:hover{
+	
+}
+.home-banner{
+	position: relative;
+	padding: 0;
+	margin-top: -72px;
+	width: 100%;
+	height: 380px;
+	min-height: 100%;
+	background: url('../img/frog.png') 0px 0px no-repeat;
+	background-size: 100% auto;
+}
+.feature{
+	text-align: center;
+}
+.feature p{
+	line-height: 26px;
+	font-style: italic;
+}
+.push-in{
+	margin: 0 auto;
+	padding: 2em 0;
+	max-width: 50em;
+}
+h1.title{
+	font-size: 1.1em;
+	margin: 30px 30px;
+	background: transparent url('../img/divider.png') 0 5px repeat-x;
+}
+h3.title{
+	font-size: 1.1em;
+	margin: 20px 20px;
+	background: transparent url('../img/divider.png') 0 5px repeat-x;
+}
+h5.title{
+	font-size: 1.1em;
+	max-width: 20em;
+	margin: 30px auto;
+	margin-top: 60px;
+	background: transparent url('../img/divider.png') 0 5px repeat-x;
+}
+.col-md-4.feature p{
+	margin: 20px 20px;
+	font-style: normal;
+}
+.title span{
+	color: #6D5407;
+	background-color: #F5EFE7;
+	padding: 0px 8px;
+	text-transform: uppercase;
+}
+.bottom{
+	margin-top: 50px;
+	padding: 0;
+}
+.full-width{
+	position: relative;
+	width: 100%;
+	height: 270px;
+	background: url('../img/dark-wood.jpg') center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    overflow: hidden;
+}
+.about{
+	text-align: center;
+	color: #fff;
+}
+.about h3{
+	margin-top: 30px;
+}
+.more, .more a{
+	padding: 5px 20px;
+	color: #fff;
+	background-color: #6D5407;
+	border: 0px solid #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 0 #574100;
+    -webkit-box-shadow: 0 3px 0 #574100;
+    -moz-box-shadow: 0 3px 0 #574100;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.more:hover{
+	color: #CCC;
+	background-color: #574100;
+	box-shadow: 0 3px 0 #413000;
+    -webkit-box-shadow: 0 3px 0 #413000;
+    -moz-box-shadow: 0 3px 0 #413000;
+}
+h5 span, h5 span a{
+	color: #6D5407;
+	margin: 15px 0px;
+}
+footer, footer a{
+	padding: 20px 0px;
+	background-color: #6D5407;
+	line-height: 35px;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+}
+/* bug fixes breakpoint */
+@media (max-width: 991px) {
+.home-banner{margin-top:-101px;height:350px;}	
+}
+
+/* styles above 768px breakpoint */
+@media (min-width: 768px) {
+.navbar-default {background-color:transparent;border-color:transparent}
+.container > .navbar-collapse, .navbar > .container .navbar-brand {/*margin-top:30px;*/color:#fff;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a{color:#fff;background-color:transparent;}
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > li > a:hover{color:#fff;background-color:#8A7A47;opacity:.8;}
+}
+/* ..and below it */
+@media (max-width: 768px) {
+.home-banner{margin-top:-20px;height:280px;}
+.navbar-default {background-color:#222;border-color:#fff;}
+.more, .more a{margin-bottom:5em;width:100%;}
+}
+/* .. for very specific elements */
+@media (max-width: 600px) {
+.home-banner{height:240px;}
+}
+
+@media (max-width: 480px) {
+.home-banner{height:150px;}
+}
+
+
+
+
+
+
+
+.nav li:hover > ul { display: block; }
+
+
