@@ -1,14 +1,32 @@
-/* Media Queries Stuff --------------------------------------------*/
-/*------------------------------------------------------------------------*/
+/* Media Queries
+-------------------------------------------------------------- */
 
-@media only screen and (min-width: 992px) { //above 992
+
+/* Above 992 (1st brk pt)
+-------------------------------------------------------------- */
+@media only screen and (min-width: 992px) {
 	.sidebar ul{
 		padding: 15px 15px 0px 15px;
 		background: $foley_grey;
 		box-shadow: 2px 2px rgba($foley_blue, 0.1);
 	}
+	.bottom-quote{
+	  	margin: 0 auto;
+	  	max-width: 50%;
+	}
+	.team{
+		margin: 30px 0px;
+	}
 }
-@media only screen and (max-width: 992px) { //below 992
+
+
+/* Below 992
+-------------------------------------------------------------- */
+@media only screen and (max-width: 992px) { 
+  #primary.hfeed{
+	max-width: 100%!important;
+
+  }
   #primary-menu {
     display: none;
   }
@@ -37,14 +55,15 @@
   #mobile-primary-menu {
     margin: 20px 0 0 0;
     padding: 20px;
-    background: #fff;
-    border: 1px solid #ebebeb;
+    background: $foley_blue;
+    border: 1px solid $foley_grey;
     position: absolute;
     width: 100%;
     z-index: 5;
   }
   #mobile-primary-menu a {
-    color: #5c5c5c;
+    color: white;
+    text-transform: uppercase;
   }
   #mobile-primary-menu > li:first-child {
     border: none;
@@ -57,12 +76,24 @@
   #mobile-primary-menu li a {
     display: block;
     padding: 5px 0;
+    font-weight: bold;
   }
   #mobile-primary-menu .sub-menu {
     padding-left: 20px;
   }
+  ul.sub-menu a{
+	  font-weight: 100!important;
+  }
+  .bottom-quote{
+	  margin: 0 auto;
+	  max-width: 80%;
+  }
 }
-/* 768 ============================================= */
+
+
+
+/* Below 768
+-------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   .gateway-show .left-side {
     margin-bottom: 30px;
@@ -76,6 +107,10 @@
   .lr-navigation {
     top: -105px;
   }
+  .grid_1, .grid_10, .grid_11, .grid_12, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9{
+	  width: 100%;
+  }
+
 }
 @media only screen and (max-width: 700px) {
   .portfolio-meta span:before {
@@ -119,34 +154,85 @@
     padding-right: 110px;
   }
 }
-/* 480 ============================================= */
+
+
+
+/* Above 700 (specific element cases)
+-------------------------------------------------------------- */
+@media screen and (min-width: 700px){ //above 700px
+	#primary.full{
+		max-width: 85%!important;
+		position: relative;
+		margin: 0 auto;
+	}
+	#primary.hfeed{
+		position: relative;
+		margin: 0 auto;
+		max-width: 90%;
+	}
+	.home .container{
+		margin-top: 0px; // removes container overlap over header
+	}
+	.home .custom-background{
+		min-height: 500px;
+	}
+	.push-in{
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		max-width: 75%;
+	}
+	.push-in-two{
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		max-width: 85%;
+	}
+
+}
+
+
+/* Below 700 (specific element cases)
+-------------------------------------------------------------- */
+@media screen and (max-width: 700px){ //below 700px
+	.social-icons .icon{
+		margin-bottom: 30px;
+	}
+	.team img{
+		max-width: 100%!important;
+	}
+}
+
+
+/* Below 480
+-------------------------------------------------------------- */
 @media (max-width: 480px) {
   body {
     font-size: 15px;
   }
 
   h1 {
-    font-size: 30px;
-  }
-
-  h2 {
     font-size: 27px;
   }
 
-  h3 {
+  h2 {
     font-size: 24px;
   }
 
-  h4 {
+  h3 {
     font-size: 21px;
   }
 
-  h5 {
+  h4 {
     font-size: 18px;
   }
 
+  h5 {
+    font-size: 15px;
+  }
+
   h6 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .open:before {
@@ -172,22 +258,44 @@
   .commentlist li {
     padding: 30px 0;
   }
+  #mobile-nav{
+		top: -45px;
+	}
+	.header #logo{
+		width: 200px;
+	}
+	.backstretch{
+		height: 0px!important;
+	}
+	.backstretch img{
+		display: none;
+	}
+	.custom-background{
+		height: 125px;
+	}
+	.custom-background.universal{
+		min-height: 125px;
+	}
 
   blockquote {
-    font-size: 23px;
+    font-size: 17px;
     line-height: 1.4;
-    padding: 20px 20px 20px 70px;
-  }
-  blockquote:before {
-    top: 25px;
-    left: 20px;
-    font-size: 23px;
+    padding-left: 30px;
+    &:before{
+	    top: 2px;
+		left: 0px;
+		font-size: 20px;
+    }
   }
 
   .entry-title {
     font-size: 25px;
   }
-
+.title, .entry-title{
+	&:after{
+		border-top: none!important;
+	}
+}
   .page-title, .format-status .entry-content, .sidebar .widget-title, #reply-title, #comments, .footer .widget-title {
     font-size: 25px;
   }
@@ -223,13 +331,28 @@
     display: block;
     margin-top: 50px;
   }
-}
-.mobile .jp-progress {
-  width: 65%!important;
-  left: 13%!important;
+  footer.copyright{
+	.grid-4{
+		padding: 30px 0px 0px 0px;
+		text-align: center;
+	}
+	.social-icons{
+		text-align: center;
+		margin-right: 0!important;
+	}
+  }
+
+  .mobile .jp-progress {
+    width: 65%!important;
+    left: 13%!important;
+  }
+
+  .mobile .jp-duration {
+    left: auto;
+    right: 20px;
+  }
+  
+  
+  
 }
 
-.mobile .jp-duration {
-  left: auto;
-  right: 20px;
-}

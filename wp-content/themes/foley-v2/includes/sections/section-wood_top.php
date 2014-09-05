@@ -2,10 +2,9 @@
 	<!-- BEGIN Homepage About Us Section -->
 	<div class="grids about">
 	  <div class="grid-12 center">
-	    <h3 class="about">This is a Title</h3>
-	    <p class="italic less-pad">Here is a quote about Foley. Something short, simple and to the point.</p>
-	    <p class="italic less-pad">No more than two lines worth of text.</p>
-	    <p class="italic less-pad"><a href="#">Link to read more</a>.</p>
+	    <h3 class="about">Twenty Years and Growing...</h3>
+	    <p class="italic less-pad bottom-quote">Foley Timber and Land Company upholds its role as a steward of the land, ensuring the sustainability of the resources for existing and future generations.</p>
+	    <!--<p class="italic less-pad"><a href="<?php echo home_url(); ?>/about">Learn more about us</a>.</p>-->
 	  </div>
 	</div>
 	<!-- END Homepage About Us Section -->
