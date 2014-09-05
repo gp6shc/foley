@@ -176,6 +176,9 @@
 	.home .custom-background{
 		min-height: 500px;
 	}
+	p.home {
+		height: 100px;
+	}
 	.push-in{
 		margin: 0 auto;
 		padding: 0;
@@ -291,11 +294,16 @@
   .entry-title {
     font-size: 25px;
   }
-.title, .entry-title{
-	&:after{
-		border-top: none!important;
-	}
-}
+  .title, .entry-title{
+	  &:after{
+		  border-top: none!important;
+	  }
+  }
+  h3.about{
+	  &:before{
+		  left: -2px;
+	  }
+  }
   .page-title, .format-status .entry-content, .sidebar .widget-title, #reply-title, #comments, .footer .widget-title {
     font-size: 25px;
   }

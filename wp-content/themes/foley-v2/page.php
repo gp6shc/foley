@@ -32,7 +32,7 @@
 
     <?php endwhile; ?>
     <?php stag_page_after(); ?>
-    
+
     <?php get_template_part('/includes/sections/section-wood_top'); ?>
 
 <!--END #primary .hfeed-->

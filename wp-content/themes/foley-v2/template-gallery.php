@@ -9,6 +9,9 @@ get_header(); ?>
 <style>
 .container, .title span{background: #38353C;}
 p{color:#f9f9f9;}
+.about{background: #f9f9f9;}
+h3.about{color: #38353C;}
+.italic{color: #38353C;}
 </style>
 
 <!--BEGIN #primary .hfeed-->
@@ -16,7 +19,7 @@ p{color:#f9f9f9;}
 
     <div class="page-header home center push-in">
 	  <h1 class="title"><span>Opportunity Awaits</span></h1>
-	  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+	  <p>Click on an image below to view photos &amp; videos of Foley Timber &amp; Land Co.</p>
 	</div>
 
 <?php while(have_posts()): the_post(); ?>
