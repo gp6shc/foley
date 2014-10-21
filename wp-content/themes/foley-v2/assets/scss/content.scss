@@ -442,6 +442,8 @@ h3{
 .static-content .entry-content,
 .section-clients .grids {
   margin-top: 50px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 .section-clients figure {
