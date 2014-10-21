@@ -20,7 +20,7 @@
     <!-- BEGIN Homepage Featured Section -->
     <div class="page-header home center push-in">
 	  <h1 class="title"><span>Welcome to Foley Timber &amp; Land Company</span></h1>
-	  <p class="italic">Foley's primary business is managing its sustainable timber operations, from which it annually harvests about 1.5 million tons of timber. It also utilizes the land for limestone mining and various agricultural activities, as well as for recreational purposes like hunting. Foley is invested in the future of Florida and the North Central Florida region and is dedicated to ensuring its landholdings mature as a healthy and viable location within Florida’s economic and environmental landscapes.</p>
+	  <p class="italic">Foley's primary business is managing its sustainable timber operations, from which it annually harvests about 1.5 million tons of timber. It also utilizes the land for limestone mining and various agricultural activities, as well as for recreational purposes such as hunting. Foley is invested in the future of Florida and the North Central Florida region and is dedicated to ensuring its landholdings mature into healthy and viable location within Florida’s economic and environmental landscapes.</p>
 	</div>
 	
 	<div class="grids">

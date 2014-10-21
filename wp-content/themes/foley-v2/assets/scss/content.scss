@@ -230,6 +230,7 @@ blockquote {
     padding-left: 50px;
     position: relative;
     font-weight: 100;
+    font-style: italic;
     line-height: 1.3;
     font-size: 24px;
     text-transform: uppercase;
@@ -877,7 +878,11 @@ h3{
 }
 .sidebar ul{
   margin: 0;
-  padding: 0;
+  padding: 15px 15px 0px 15px;
+  border-left: 5px solid lighten($foley_blue, 30%);
+  background: $foley_grey;
+  box-shadow: 2px 2px rgba($foley_blue, 0.1);
+  border-radius: 2px;
   li{
   	list-style: none;
   }
@@ -885,21 +890,24 @@ h3{
 .sidebar a{
 	display: inline-block;
 	width: 100%;
+	padding: 12px;
   	margin-bottom: 15px;
 	background: white;
-	border-left: 5px solid $foley_brown;
+	//border-left: 5px solid $foley_brown;
 	box-shadow: 2px 2px rgba($foley_blue, 0.1);
-	padding: 12px;
-	&:after{
-		content: '';
-		position: absolute;
-		right: 20px;
-		opacity: 0.2;
+	border-radius: 2px;
+	font-style: italic;
+	&:before{
+		content: '\25b8';
+		position: relative;
+		right: 5px;
+		opacity: 0.5;
 		color: $foley_brown;
+		font-style: normal;
 	}
 	&:hover{
 		background: darken( $foley_grey, 10%);
-		border-left: 5px solid $foley_blue;
+		border-left: 5px solid lighten($foley_blue, 30%);
 		box-shadow: 2px 2px rgba($foley_blue, 0.3);
 	}
 } 
