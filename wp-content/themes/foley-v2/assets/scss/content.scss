@@ -786,6 +786,7 @@ h3{
   }
 }
 .custom-background-content h2 {
+  display: none;
   font-family: "Novecento Wide", "Open Sans", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -795,7 +796,7 @@ h3{
 }
 @media screen and (min-width: 700px) {
   .home .custom-background-content h2 {
-    font-size: 80px;
+    display: none;
   }
 }
 .custom-background-content h3 {
@@ -879,7 +880,7 @@ h3{
 .sidebar ul{
   margin: 0;
   padding: 15px 15px 0px 15px;
-  border-left: 5px solid lighten($foley_blue, 30%);
+  /* border-left: 5px solid rgba($foley_blue, 0.1); */
   background: $foley_grey;
   box-shadow: 2px 2px rgba($foley_blue, 0.1);
   border-radius: 2px;

@@ -6,20 +6,6 @@ Template Name: Contact Foley
 
 <?php get_header(); ?>
 
-<!-- Contact pg style overrides -->
-<style>
-body{background:url('http://192.155.94.156/foley/wp-content/uploads/2014/02/wood.png') 0px 0px no-repeat;background-position:center center;background-size:cover;}
-.container{margin-bottom:200px;position:relative;max-width:85%;background:#38353C;}
-.custom-background.universal{background-color:transparent!important;}
-.entry-title span, .title span{background: #38353C;}
-h3.title.no{margin-bottom:-15px;}
-p{color:#f9f9f9;}
-span.icon{color:#6D5127;}
-.entry-content p{margin: 0 0 1px 0;}
-h3.name{color:#f9f9f9;text-transform: uppercase;font-size:inherit;font-weight:700;}
-button{margin-top:15px;}
-</style>
-
 <!--BEGIN #primary .hfeed-->
 <div id="primary" class="hfeed" role="main">
 
@@ -40,20 +26,21 @@ button{margin-top:15px;}
             the_content( __('Continue Reading', 'stag') );
             wp_link_pages(array('before' => '<p><strong>'.__('Pages:', 'stag').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
             
-            <div class="grid_8">
-		  	<h3 class="name"><span>Our Location</span></h3>
-			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:300px;width:100%;"><div id="gmap_canvas" style="height:500px;width:700px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" id="get-map-data"></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(30.0685119,-83.55867330000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.0685119, -83.55867330000001)});infowindow = new google.maps.InfoWindow({content:"<b>Foley Timber &amp; Land Co.</b><br/>1700 Foley Lane<br/>32348 Perry" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-		  </div>
+            <div class="grid_12 omega center">
+		   	  <h3 class="name"><span>Foley Timber and Land Co.</span></h3>
+		  	    <p>1700 Foley Lane</p>
+		  	    <p>Perry, FL 32348</p>
+		  	    <p><span class="icon">phone:</span> 850.838.2224</p>
+		  	    <p><span class="icon">email:</span> ftlc@fairpoint.net</p>
+		  	    <a href="mailto:ftlc@fairpoint.net"><button class="more" title="">Email us</button></a>
+		    </div>
+		    
+		    <div class="clearfix"></div>
             
-            <div class="grid_4 omega center">
-		  	<h3 class="name"><span>Foley Timber and Land Co.</span></h3>
-		  	  <p>1700 Foley Lane</p>
-		  	  <p>Perry, FL 32348</p>
-		  	  <p><span class="icon">phone:</span> 850.838.2224</p>
-		  	  <p><span class="icon">email:</span> ftlc@fairpoint.net</p>
-		  	  <a href="mailto:ftlc@fairpoint.net"><button class="more" title="">Email us</button></a>
-		  </div>
-            
+            <div class="grid_12 omega">
+		  	  <h3 class="name"><span>Our Location</span></h3>
+			  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:100%;"><div id="gmap_canvas" style="height:450px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" id="get-map-data"></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(30.0685119,-83.55867330000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.0685119, -83.55867330000001)});infowindow = new google.maps.InfoWindow({content:"<b>Foley Timber &amp; Land Co.</b><br/>1700 Foley Lane<br/>32348 Perry" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		    </div>
             
        <!-- <div class="grids">
 		  <div class="grid-4 center">

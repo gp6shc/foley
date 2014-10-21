@@ -175,6 +175,54 @@ hr{
 
 /* Contact
 -------------------------------------------------------------- */
+body.page-template-template-contact-foley-php{
+	background: url('../img/wood.png') 0 0 no-repeat;
+	background-position: center center;
+	background-size: cover;
+	
+	.container{
+		margin-bottom: 200px;
+		position: relative;
+		max-width: 85%;
+		background: $foley_blue;
+	}
+	
+	.custom-background.universal{
+		background-color: transparent!important;
+	}
+	
+	.entry-title span, .title span{
+		background: $foley_blue;
+	}
+	
+	.entry-title{
+		margin-bottom: 0;
+	}
+	
+	p{
+		color: $foley_white;
+		margin: 0;
+	}
+	
+	span.icon{
+		color: #6D5127;
+	}
+	
+	button{
+		margin-top:15px;
+	}
+	
+}
+
+h3.title.no{
+	margin-bottom: -15px;
+}
+h3.name{
+	color: $foley_white;
+	text-transform: uppercase;
+	font-size: inherit;
+	font-weight: 700;
+}
 
 /* Gallery
 -------------------------------------------------------------- */
