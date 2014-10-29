@@ -52,7 +52,7 @@ h3.about{color: #38353C;}
         $query->query(
           array(
             'post_type' => 'portfolio',
-            'posts_per_page' => stag_get_option('portfolio_count'),
+            'posts_per_page' => -1,
             'paged' => $paged
             )
           );

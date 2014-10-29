@@ -39,7 +39,30 @@ Template Name: Contact Foley
             
             <div class="grid_12 omega">
 		  	  <h3 class="name"><span>Our Location</span></h3>
-			  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:100%;"><div id="gmap_canvas" style="height:450px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" id="get-map-data"></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(30.0685119,-83.55867330000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.0685119, -83.55867330000001)});infowindow = new google.maps.InfoWindow({content:"<b>Foley Timber &amp; Land Co.</b><br/>1700 Foley Lane<br/>32348 Perry" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		  	  
+		  	  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+		  	  <script type="text/javascript">
+            //custom google map for branding
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                var mapOptions = {
+                    zoom: 15,
+                    // latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(30.0685119, -83.55867330000001), // Foley
+                    //styles
+                     styles: [{"featureType":"water"[{"color":"#6ebeab"}]},{"featureType":"road"[{"color":"#866533"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f9f9f9"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"color":"#000"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#000"}]},{"featureType":"landscape.natural.terrain","stylers":[{"color":"#000"}]},{}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        </script>
+        <style type="text/css">#map {width: 100%;height: 450px;margin-bottom: 30px;}</style>
+       	  <div id="map"></div>
 		    </div>
             
        <!-- <div class="grids">
