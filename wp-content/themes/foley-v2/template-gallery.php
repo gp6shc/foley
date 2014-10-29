@@ -19,7 +19,7 @@ h3.about{color: #38353C;}
 
     <div class="page-header home center push-in">
 	  <h1 class="title"><span>Opportunity Awaits</span></h1>
-	  <p>Click on an image below to view photos &amp; videos of Foley Timber &amp; Land Co.</p>
+	  <p>Explore photos and videos of Foley Timber &amp; Land Company here.</p>
 	</div>
 
 <?php while(have_posts()): the_post(); ?>
