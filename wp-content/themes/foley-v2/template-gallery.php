@@ -10,7 +10,7 @@ get_header(); ?>
 .container, .title span{background: #38353C;}
 p{color:#f9f9f9;}
 .about{background: #f9f9f9;}
-h3.about{color: #38353C;}
+h3.about span{background: transparent;color: #38353C;}
 .italic{color: #38353C;}
 </style>
 
@@ -75,7 +75,7 @@ h3.about{color: #38353C;}
 
         <div <?php post_class($class); ?>>
             <div class="overlay">
-              <h3 class="gallery-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'stag'), get_the_title()); ?>"> <?php the_title(); ?></a></h3>
+              <h3 class="gallery-title"><?php the_title(); ?></h3>
               <div class="portfolio-navigation">
                 <a href="<?php the_permalink(); ?>" class="accent-background portfolio-trigger" data-id="<?php the_ID(); ?>"><i class="icon-eye"></i></a>
                 <!--<a href="<?php the_permalink(); ?>" class="accent-background" rel="bookmark" title="<?php printf(__('Permanent Link to %s', 'stag'), get_the_title()); ?>"><i class="icon-post-link"></i></a>-->

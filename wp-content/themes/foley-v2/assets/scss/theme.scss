@@ -86,7 +86,7 @@ $foley_blue: #38353C;
 }
 .italic{
 	font-style: italic;
-	padding: 20px 0px;
+	padding-bottom: 30px;
 }
 .about{
 	background: $foley_blue;
@@ -100,15 +100,23 @@ p.home{
 h3.about{
 	text-transform: uppercase;
 	font-weight: 400;
-	&:before{
+	margin: 0 auto;
+	width: auto;
+	max-width: 60%;
+	span{
 		position: relative;
-		content: "\e01d";
-		top: 0;
-		left: -10px;
-		font-family: 'stag';
-		font-size: 20px;
-		color: $foley_brown;
-		opacity: 0.5;
+		background: $foley_blue;
+		padding: 0 10px;
+		line-height: 36px;
+		z-index: 1;
+	}
+	&:before{
+		display: block;
+		position: relative;
+		content: "";
+		top: 20px;
+		opacity: 0.9;
+		border: 1px solid $foley_grey;
 	}
 }
 
@@ -234,9 +242,13 @@ h3.name{
 	padding-top: 50px;
 }
 
+/* Opportunity on a grand scale section
+-------------------------------------------------------------- */
+
 
 /* Footer 
 -------------------------------------------------------------- */
+
 footer.copyright{
 	background: darken( $foley_brown, 10%);
 	//@include shadow(#222222);

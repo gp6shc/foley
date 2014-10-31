@@ -19,14 +19,14 @@
 
     <footer class="copyright">
         <div class="inside grids">
-            <div class="grid-4">
+            <div class="grid-12">
                 <p><?php echo stripslashes(stag_get_option('general_footer_text')); ?></p>
             </div>
             <?php if(stag_get_option('footer_social_links') != ''): ?>
-            <div class="grid-8">
+            <!--<div class="grid-4">
                 <?php echo do_shortcode(stripcslashes(stag_get_option('footer_social_links'))); ?>
 
-            </div>
+            </div>-->
             <?php endif; ?>
         </div>
     </footer>

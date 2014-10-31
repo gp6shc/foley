@@ -43,10 +43,8 @@ footer.copyright {
 footer.copyright a:hover {
   color: #fff;
 }
-footer.copyright .grid-4 {
+footer.copyright .grid-4, footer.copyright .grid-12 {
   padding: 25px 0px 25px 30px;
-}
-footer.copyright .grid-8, footer.copyright .grid-4 {
   margin-bottom: 0;
 }
 footer.copyright .social-icons {

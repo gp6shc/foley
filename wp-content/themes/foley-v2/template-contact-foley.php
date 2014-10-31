@@ -27,7 +27,7 @@ Template Name: Contact Foley
             wp_link_pages(array('before' => '<p><strong>'.__('Pages:', 'stag').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
             
             <div class="grid_12 omega center">
-		   	  <h3 class="name"><span>Foley Timber and Land Co.</span></h3>
+		   	  <h3 class="name"><span>Foley Timber and Land Company, Limited Partnership,<br> A Delaware Limited Partnership</span></h3>
 		  	    <p>1700 Foley Lane</p>
 		  	    <p>Perry, FL 32348</p>
 		  	    <p><span class="icon">phone:</span> 850.838.2224</p>
@@ -47,7 +47,7 @@ Template Name: Contact Foley
         
             function init() {
                 var mapOptions = {
-                    zoom: 15,
+                    zoom: 12,
                     // latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(30.0685119, -83.55867330000001), // Foley
                     //styles
@@ -61,7 +61,7 @@ Template Name: Contact Foley
                 var map = new google.maps.Map(mapElement, mapOptions);
             }
         </script>
-        <style type="text/css">#map {width: 100%;height: 450px;margin-bottom: 30px;}</style>
+        <style type="text/css">#map {width: 100%;height: 475px;margin-bottom: 30px;}</style>
        	  <div id="map"></div>
 		    </div>
             

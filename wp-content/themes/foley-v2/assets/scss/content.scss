@@ -711,7 +711,10 @@ h3{
   vertical-align: bottom;
 }
 .gateway-show .right-side {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  right: 15px;
 }
 
 .portfolio-filter {
